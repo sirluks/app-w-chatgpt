@@ -32,8 +32,8 @@ return new class extends Migration
         ")->toSql();
 
 
-        //DB::statement("CREATE MATERIALIZED VIEW sales_commission_view AS $query");
-        DB::statement("CREATE VIEW sales_commission_view AS $query");
+        DB::statement("CREATE MATERIALIZED VIEW sales_commission_view AS $query"); #View Referente ao Postgres
+        //DB::statement("CREATE VIEW sales_commission_view AS $query"); #View Referente ao MySQL
         
     }
 
@@ -42,7 +42,7 @@ return new class extends Migration
      */
     public function down(): void
     {
-        //DB::statement("DROP MATERIALIZED VIEW sales_commission_view");
-        DB::statement("DROP VIEW sales_commission_view");
+        DB::statement("DROP MATERIALIZED VIEW sales_commission_view"); #Drop View Referente ao Postgres
+        //DB::statement("DROP VIEW sales_commission_view"); #Drop View Referente ao MySQL
     }
 };
