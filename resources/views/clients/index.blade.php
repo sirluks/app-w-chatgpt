@@ -38,7 +38,7 @@
                                 <td class="px-3 py-4 text-sm text-gray-500 whitespace-nowrap">{{ $client->user->city }}</td>
                                 <td class="px-3 py-4 text-sm text-gray-500 whitespace-nowrap">{{ $client->user->state }}</td>
                                 <td class="relative py-4 pl-3 pr-4 text-sm font-medium text-right whitespace-nowrap sm:pr-6">
-                                <a href="#" class="text-indigo-600 hover:text-indigo-900">Edit</a>
+                                <a href="{{ route('clients.edit', $client->id) }}" class="text-indigo-600 hover:text-indigo-900">Edit</a>
                                 </td>
                                 <td class="relative py-4 pl-3 pr-4 text-sm font-medium text-right whitespace-nowrap sm:pr-6">
                                     delete

@@ -17,6 +17,6 @@ yarn-error.log
 /.fleet
 /.idea
 /.vscode
-database/migrations/2023_10_19_202716_create_user_email_index.php
-database/migrations/2023_10_19_204058_create_sales_commission_view.php
-database/seeders/DatabaseSeeder.php
+/database/migrations/2023_10_19_202716_create_user_email_index.php
+/database/migrations/2023_10_19_204058_create_sales_commission_view.php
+/database/seeders/DatabaseSeeder.php
