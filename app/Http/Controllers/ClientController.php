@@ -62,7 +62,7 @@ class ClientController extends Controller
      */
     public function edit(Client $client)
     {
-        //
+        return view('clients.edit', compact('client'));
     }
 
     /**
@@ -70,7 +70,18 @@ class ClientController extends Controller
      */
     public function update(UpdateClientRequest $request, Client $client)
     {
-        //
+        DB::transaction(function() use($request, $client) {
+            $client->user->update([
+                'email' => $request->get('email'),
+                'name' => $request->get('name'),
+            ]);
+
+            $client->update([
+                'address_id' => $request->get('address_id'),
+            ]);
+        });
+
+        return redirect()->route('clients.index');
     }
 
     /**
