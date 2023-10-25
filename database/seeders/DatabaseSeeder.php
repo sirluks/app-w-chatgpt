@@ -19,6 +19,6 @@ class DatabaseSeeder extends Seeder
             UserSeeder::class
         ]);
 
-        //DB::unprepared("REFRESH MATERIALIZED VIEW sales_commission_view;");
+        DB::unprepared("REFRESH MATERIALIZED VIEW sales_commission_view;"); #Atualização da View Materializada do Postgres
     }
 }
