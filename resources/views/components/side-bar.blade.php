@@ -1,4 +1,4 @@
-<div>
+<div
     x-show="menuVisibility"
     class="relative z-40 md:hidden" role="dialog" aria-modal="true">
 
