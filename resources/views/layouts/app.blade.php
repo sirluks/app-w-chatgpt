@@ -16,7 +16,11 @@
     </head>
     <body class="min-h-screen">
         <div>
+<<<<<<< HEAD
         
+=======
+            
+>>>>>>> main
         </div>
     </body>
 </html>

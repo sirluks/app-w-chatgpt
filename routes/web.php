@@ -40,6 +40,7 @@ Route::middleware('auth')->group(function () {
     });
 });
 
+Route::resource('/clients', ClientController::class);
+
 require __DIR__.'/auth.php';
 
-Route::resource('/clients', ClientController::class);
