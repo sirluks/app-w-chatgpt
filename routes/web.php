@@ -28,16 +28,16 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
-
     Route::get('/chart', function () {
-        $lucas = OpenAI::completions()->create([
+        
+        /* $teste = OpenAI::completions()->create([
             'model' => 'text-davinci-003',
             'prompt' => '',
-            'max_tokens' => 1500,
+            'max_tokens' => 500,
         ]);
+        dd($teste); */
         return 'Lucas';
     });
-    
 });
 
 Route::resource('/clients', ClientController::class);
