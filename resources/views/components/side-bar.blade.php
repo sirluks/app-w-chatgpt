@@ -60,9 +60,7 @@
 <div class="hidden md:fixed md:inset-y-0 md:flex md:w-64 md:flex-col">
     <div class="flex min-h-0 flex-1 flex-col bg-gray-800">
 
-        <div class="flex flex-shrink-0 items-center px-4 py-4">
-            <img class="h-8 w-auto" src="{{ Vite::asset("resources/assets/logo.svg") }}" alt="Your Company">
-        </div>
+        <x-logo/>
 
         <div class="flex flex-1 flex-col overflow-y-auto">
             <x-side-bar-items />
